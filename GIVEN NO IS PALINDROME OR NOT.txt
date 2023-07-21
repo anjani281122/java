@@ -1,0 +1,23 @@
+CHECKING WHETHER THE GIVEN NO IS PALINDROME OR NOT
+==========================================================
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int p=sc.nextInt();
+	    int rem,rev=0,temp;
+	    temp=p;
+	    while(p>0)
+	    {
+	        rem=p%10;
+	        rev=(rev*10)+rem;
+	        p=p/10;
+	    }
+	    if(temp==rev)
+	        System.out.print("palindrome no");
+	   else
+	        System.out.print("not a palindrome no");
+	    }
+	    
+	}

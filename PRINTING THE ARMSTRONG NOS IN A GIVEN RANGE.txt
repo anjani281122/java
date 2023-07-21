@@ -1,0 +1,25 @@
+PRINTING THE ARMSTRONG NOS IN A GIVEN RANGE
+============================================
+import java.util.*;
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int a=sc.nextInt();
+	    int b=sc.nextInt();
+	    for(int i=a;i<b;i++)
+	    {
+	    int temp,r,sum=0;
+	    temp=i;
+	    while(temp!=0)
+	    {
+	        r=temp%10;
+	        sum=sum+(r*r*r);
+	        temp=temp/10;
+	    }
+	    if(sum==i)
+	    	System.out.println(i);
+	    }
+	}
+}

@@ -1,0 +1,30 @@
+COUNTING THE OCCURRENCE OF ELEMENTS IN A GIVEN ARRAY
+=============================================================================
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int count=0;
+	int s=sc.nextInt();
+	int a[]=new int[s];
+	for(int i=0;i<s;i++)
+	{
+	    a[i]=sc.nextInt();
+	}
+	System.out.println("Enter the number");
+	int n=sc.nextInt();
+	for(int j=0;j<s;j++)
+	{
+	    if(a[j]==n)
+	    {
+	    count++;
+	    }
+	}
+	    System.out.println(+count);
+	
+	}
+	}
+
+
+
